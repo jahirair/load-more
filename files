@@ -1,0 +1,181 @@
+<script src="assets/js/jQuery.2.2.4.js"></script><!-- load more-->
+<script> 
+	  $(document).ready(function () {
+    size_li = $("#myList div.load").size();
+	//alert($('#myList div.load').size());
+    x=4;
+	//alert("#myList div:lt('+x+')");
+    $('#myList div.load:lt('+x+')').show();
+    $('#loadMore').click(function () {
+        x= (x+4 <= size_li) ? x+4 : size_li;
+        $('#myList div.load:lt('+x+')').show();
+		//alert(x);
+		if(x==size_li){
+		//$('#loadMore').hide();
+		$('#loadMore').text("No More Posts");
+		}
+    });
+	
+
+});</script>
+
+Css
+
+.load-more {
+	text-align: center;
+	margin-bottom: 100px;
+}
+#myList div.load{ display:none;
+}
+
+
+#loadMore  {
+    color: #fff;
+    background: #000;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+	cursor:pointer;
+	width: max-content;
+    margin: 0 auto 100px auto;
+}
+
+
+<section class="blog-area pb-100" id="blog">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="area-title">
+                     <h2>recent blogs</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="blogs">
+               <div class="row" id="myList">
+                  <div class="col-lg-3 col-md-6 col-sm-6 load">
+                     <div class="single-blog wow fadeInRight" data-wow-delay=".1s">
+                        <img src="assets/img/team2.750.jpg" alt="">
+                        <span class="category">lifestyle</span>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis labore ipsum </h2>
+                        <span class="blog-meta">02 march 2018</span>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6 load">
+                     <div class="single-blog wow fadeInUp" data-wow-delay=".8s">
+                        <img src="assets/img/banner1.750.jpg" alt="">
+                        <span class="category">fashion</span>
+                        <h2> velit assumenda. Iure, quos saepe nulla excepturi perspiciatis facere.</h2>
+                        <span class="blog-meta">02 march 2018</span>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6 load">
+                     <div class="single-blog wow fadeInDown" data-wow-delay=".6s">
+                        <img src="assets/img/team3.750.jpg" alt="">
+                        <span class="category">event</span>
+                        <h2>assumenda. Iure, quos saepe nulla excepturi perspiciatis facere.</h2>
+                        <span class="blog-meta">02 march 2018</span>
+                     </div>
+                  </div>
+				  <div class="col-lg-3 col-md-6 col-sm-6 load">
+                     <div class="single-blog wow fadeInUp" data-wow-delay=".8s">
+                        <img src="assets/img/banner2.750.jpg" alt="">
+                        <span class="category">fashion</span>
+                        <h2> velit assumenda. Iure, quos saepe nulla excepturi perspiciatis facere.</h2>
+                        <span class="blog-meta">02 march 2018</span>
+                     </div>
+                  </div>
+				  <div class="col-lg-3 col-md-6 col-sm-6 load">
+                     <div class="single-blog wow fadeInRight" data-wow-delay=".1s">
+                        <img src="assets/img/team2.750.jpg" alt="">
+                        <span class="category">lifestyle</span>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis labore ipsum </h2>
+                        <span class="blog-meta">02 march 2018</span>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6 load">
+                     <div class="single-blog wow fadeInUp" data-wow-delay=".8s">
+                        <img src="assets/img/banner1.750.jpg" alt="">
+                        <span class="category">fashion</span>
+                        <h2> velit assumenda. Iure, quos saepe nulla excepturi perspiciatis facere.</h2>
+                        <span class="blog-meta">02 march 2018</span>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6 load">
+                     <div class="single-blog wow fadeInDown" data-wow-delay=".6s">
+                        <img src="assets/img/team3.750.jpg" alt="">
+                        <span class="category">event</span>
+                        <h2>assumenda. Iure, quos saepe nulla excepturi perspiciatis facere.</h2>
+                        <span class="blog-meta">02 march 2018</span>
+                     </div>
+                  </div>
+				  <div class="col-lg-3 col-md-6 col-sm-6 load">
+                     <div class="single-blog wow fadeInUp" data-wow-delay=".8s">
+                        <img src="assets/img/banner2.750.jpg" alt="">
+                        <span class="category">fashion</span>
+                        <h2> velit assumenda. Iure, quos saepe nulla excepturi perspiciatis facere.</h2>
+                        <span class="blog-meta">02 march 2018</span>
+                     </div>
+                  </div>
+				  <div class="col-lg-3 col-md-6 col-sm-6 load">
+                     <div class="single-blog wow fadeInRight" data-wow-delay=".1s">
+                        <img src="assets/img/team2.750.jpg" alt="">
+                        <span class="category">lifestyle</span>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis labore ipsum </h2>
+                        <span class="blog-meta">02 march 2018</span>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6 load">
+                     <div class="single-blog wow fadeInUp" data-wow-delay=".8s">
+                        <img src="assets/img/banner1.750.jpg" alt="">
+                        <span class="category">fashion</span>
+                        <h2> velit assumenda. Iure, quos saepe nulla excepturi perspiciatis facere.</h2>
+                        <span class="blog-meta">02 march 2018</span>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6 load">
+                     <div class="single-blog wow fadeInDown" data-wow-delay=".6s">
+                        <img src="assets/img/team3.750.jpg" alt="">
+                        <span class="category">event</span>
+                        <h2>assumenda. Iure, quos saepe nulla excepturi perspiciatis facere.</h2>
+                        <span class="blog-meta">02 march 2018</span>
+                     </div>
+                  </div>
+				  <div class="col-lg-3 col-md-6 col-sm-6 load">
+                     <div class="single-blog wow fadeInUp" data-wow-delay=".8s">
+                        <img src="assets/img/banner2.750.jpg" alt="">
+                        <span class="category">fashion</span>
+                        <h2> velit assumenda. Iure, quos saepe nulla excepturi perspiciatis facere.</h2>
+                        <span class="blog-meta">02 march 2018</span>
+                     </div>
+                  </div>
+				  <div class="col-lg-3 col-md-6 col-sm-6 load">
+                     <div class="single-blog wow fadeInUp" data-wow-delay=".8s">
+                        <img src="assets/img/banner2.750.jpg" alt="">
+                        <span class="category">fashion</span>
+                        <h2> velit assumenda. Iure, quos saepe nulla excepturi perspiciatis facere.</h2>
+                        <span class="blog-meta">02 march 2018</span>
+                     </div>
+                  </div>
+				  <div class="col-lg-3 col-md-6 col-sm-6 load">
+                     <div class="single-blog wow fadeInUp" data-wow-delay=".8s">
+                        <img src="assets/img/banner2.750.jpg" alt="">
+                        <span class="category">fashion</span>
+                        <h2> velit assumenda. Iure, quos saepe nulla excepturi perspiciatis facere.</h2>
+                        <span class="blog-meta">02 march 2018</span>
+                     </div>
+                  </div>
+				  
+				  
+               </div>
+			   
+
+            </div>
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="load-more" id="loadMore">Load More</div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Blog Area End Here -->
